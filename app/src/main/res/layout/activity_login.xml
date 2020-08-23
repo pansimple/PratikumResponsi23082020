@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_login"
+    android:padding="18dp"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/panji"
+        android:layout_width="161dp"
+        android:layout_height="159dp"
+        android:src="@drawable/panji"/>
+
+    <EditText
+            android:id="@+id/et_emailSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:hint="Nama Pengguna"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+        <EditText
+            android:id="@+id/et_passwordSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/light"
+            android:hint="Kata Sandi"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeActionId="6"
+            android:imeActionLabel="Sign In"
+            android:imeOptions="actionDone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_signinSignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MASUK"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_signupSignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="DAFTAR"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"/>
+
+        </LinearLayout>
+</LinearLayout>
